@@ -1,0 +1,23 @@
+info:
+  name: CreatDetalle
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:5121/api/DetallePlanillas
+  body:
+    type: json
+    data: |-
+      {
+        "PlanillaId": "1",
+        "EmpleadoId": "ad977c01-d76e-45bd-b99d-ca7b1a77edca",
+        "Comentario": "2026-02-01"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

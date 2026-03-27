@@ -1,0 +1,15 @@
+info:
+  name: GetByIdPlanilla
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5121/api/Planillas/7e323ffe-1a06-422a-91de-fa4ae5ed72b8
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

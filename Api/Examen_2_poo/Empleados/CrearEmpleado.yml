@@ -1,0 +1,25 @@
+info:
+  name: CrearEmpleado
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5121/api/Empleados
+  body:
+    type: json
+    data: |-
+      {
+        "Nombre": "Camila",
+        "Apellido": "Welchez",
+        "Documento": "Nose",
+        "Departamento": "Contabilidad",
+        "PuestoTrabajo": "Contadora"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

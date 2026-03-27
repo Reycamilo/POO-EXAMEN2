@@ -1,0 +1,23 @@
+info:
+  name: UpdatePlanilla
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:5121/api/Planillas/2492cf00-a40c-46e0-b087-57704746ca89
+  body:
+    type: json
+    data: |-
+      {
+        "Periodo": "Marxo 2027",
+        "FechaCreacion": "2025-03-12",
+        "FechaPago": "2026-02-01"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

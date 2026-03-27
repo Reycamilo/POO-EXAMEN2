@@ -1,0 +1,15 @@
+info:
+  name: DeletePlanilla
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://localhost:5121/api/Planillas/2492cf00-a40c-46e0-b087-57704746ca89
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: Update
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://localhost:5121/api/Empleados/7e323ffe-1a06-422a-91de-fa4ae5ed72b8
+  body:
+    type: json
+    data: |-
+      {
+        "Nombre": "Rojelio",
+        "Apellido": "Lara",
+        "Documento": "Nose",
+        "Departamento": "Contabilidad",
+        "PuestoTrabajo": "Contadora"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
